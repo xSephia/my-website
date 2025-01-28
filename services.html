@@ -6,26 +6,105 @@
   <title>Services - FGRconsult</title>
   <link rel="stylesheet" href="styles/style.css">
   <style>
+    /* Inline styles for background */
     body {
-      background-image: url('blackrockbg.jpg');
+      background-image: url('images/blackrockbg.jpg');
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
       margin: 0;
       font-family: Arial, sans-serif;
+      color: #fff; /* Ensures text is readable on a dark background */
+    }
+    header {
+      background: rgba(0, 0, 0, 0.7); /* Adds a translucent background for better readability */
+      padding: 20px 0;
+    }
+    header h1 {
+      margin: 0;
+      text-align: center;
       color: #fff;
     }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+    .services {
+      padding: 50px 20px;
+      background: rgba(0, 0, 0, 0.6); /* Translucent overlay for readability */
+      border-radius: 8px;
+      max-width: 800px;
+      margin: 50px auto;
+    }
+    .services h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .service-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
     .card {
-      background: rgba(26, 26, 26, 0.9); /* Slight transparency */
+      background: #1a1a1a; /* Solid soft black background */
       padding: 20px;
       border-radius: 8px;
       text-align: center;
       width: 250px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     }
+    .card h3 {
+      margin-top: 0;
+      color: #fff;
+    }
+    .card p {
+      margin: 10px 0 20px;
+      color: #ccc; /* Softer text color for contrast */
+    }
+    .cta-button {
+      display: inline-block;
+      padding: 10px 15px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .cta-button:hover {
+      background-color: #0056b3;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.8);
+      color: #fff;
+    }
   </style>
 </head>
 <body>
+  <header>
+    <div class="container">
+      <h1>FGRconsult</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
   <section class="services">
     <div class="container">
       <h2>Our Services</h2>
@@ -48,6 +127,11 @@
       </div>
     </div>
   </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 FGRconsult. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
-
