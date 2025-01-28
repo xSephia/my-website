@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+  .benefit-cards {
+    flex-direction: column;
+  }
+
+  .hero h2 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+}
