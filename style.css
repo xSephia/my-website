@@ -1,3 +1,12 @@
+body {
+    background-image: url('images/background.jpg');
+    background-size: cover; /* Make the image cover the entire background */
+    background-repeat: no-repeat; /* Prevent tiling */
+    background-attachment: fixed; /* Make the background stay in place when scrolling */
+    background-position: center; /* Center the image */
+    margin: 0; /* Remove default margin */
+    font-family: Arial, sans-serif; /* Set a font for the text */
+}
 /* General Styles */
 body {
   font-family: 'Roboto', sans-serif;
