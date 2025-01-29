@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FGRconsult - AI-Augmented Web Design and Marketing Consultants</title>
+  <title>Services - FGRconsult</title>
   <link rel="stylesheet" href="styles/style.css">
   <style>
+    /* Inline styles for background */
     body {
       background-image: url('blackrockbg2.jpg');
       background-size: cover;
@@ -13,20 +14,21 @@
       background-attachment: fixed;
       margin: 0;
       font-family: Arial, sans-serif;
-      color: #fff;
+      color: #fff; /* Ensures text is readable on a dark background */
     }
     header {
-      background: rgba(0, 0, 0, 0.7);
-      padding: 20px 0;
+      background: url('banner1.jpg') no-repeat center center;
+      background-size: cover;
+      padding: 50px 0;
+      text-align: center;
     }
-    .banner img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-    nav {
-      background: rgba(0, 0, 0, 0.8);
-      padding: 10px 0;
+    header h1 {
+      margin: 0;
+      color: #fff;
+      background: rgba(0, 0, 0, 0.5);
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 8px;
     }
     nav ul {
       list-style: none;
@@ -40,54 +42,25 @@
       color: #fff;
       font-weight: bold;
     }
-    .hero {
-      text-align: center;
-      padding: 100px 20px;
-      background: rgba(0, 0, 0, 0.6);
+    .services {
+      padding: 50px 20px;
+      background: rgba(0, 0, 0, 0.6); /* Translucent overlay for readability */
       border-radius: 8px;
       max-width: 800px;
       margin: 50px auto;
     }
-    .hero h2 {
-      font-size: 2.5em;
-      margin-bottom: 20px;
-    }
-    .hero p {
-      font-size: 1.2em;
-      margin-bottom: 30px;
-      color: #ccc;
-    }
-    .cta-button {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #007bff;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-    .cta-button:hover {
-      background-color: #0056b3;
-    }
-    .benefits {
-      padding: 50px 20px;
-      background: rgba(0, 0, 0, 0.6);
-      border-radius: 8px;
-      max-width: 1000px;
-      margin: 50px auto;
-    }
-    .benefits h2 {
+    .services h2 {
       text-align: center;
       margin-bottom: 30px;
     }
-    .benefit-cards {
+    .service-cards {
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
       justify-content: center;
     }
     .card {
-      background: rgba(26, 26, 26, 0.9);
+      background: #1a1a1a; /* Solid soft black background */
       padding: 20px;
       border-radius: 8px;
       text-align: center;
@@ -100,7 +73,19 @@
     }
     .card p {
       margin: 10px 0 20px;
-      color: #ccc;
+      color: #ccc; /* Softer text color for contrast */
+    }
+    .cta-button {
+      display: inline-block;
+      padding: 10px 15px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .cta-button:hover {
+      background-color: #0056b3;
     }
     footer {
       text-align: center;
@@ -112,44 +97,37 @@
 </head>
 <body>
   <header>
-    <div class="banner">
-      <img src="banner2.jpg" alt="FGRconsult Banner">
-    </div>
-    <nav>
-      <div class="container">
+    <div class="container">
+      <h1>FGRconsult</h1>
+      <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
 
-  <section class="hero">
+  <section class="services">
     <div class="container">
-      <h2>AI-Powered Websites for Small Businesses</h2>
-      <p>Fast, Affordable, and Cutting-Edge</p>
-      <a href="contact.html" class="cta-button">Get Your Free Consultation</a>
-    </div>
-  </section>
-
-  <section class="benefits">
-    <div class="container">
-      <h2>Why Choose Us?</h2>
-      <div class="benefit-cards">
+      <h2>Our Services</h2>
+      <div class="service-cards">
         <div class="card">
-          <h3>AI-Driven Design</h3>
-          <p>Leverage advanced Chinese AI tools for faster, smarter website creation.</p>
+          <h3>Basic Website Creation</h3>
+          <p>Get a professional, responsive website built using advanced AI tools.</p>
+          <a href="contact.html" class="cta-button">Get Started</a>
         </div>
         <div class="card">
-          <h3>Affordable Pricing</h3>
-          <p>Tailored solutions for small and local businesses.</p>
+          <h3>AI-Optimized Upgrades</h3>
+          <p>Enhance your existing website with AI-driven improvements.</p>
+          <a href="contact.html" class="cta-button">Upgrade Now</a>
         </div>
         <div class="card">
-          <h3>Local Focus, Global Tech</h3>
-          <p>Combining local expertise with cutting-edge AI technology.</p>
+          <h3>Ongoing Maintenance</h3>
+          <p>We’ll handle the technical side so you can focus on your business.</p>
+          <a href="contact.html" class="cta-button">Learn More</a>
         </div>
       </div>
     </div>
