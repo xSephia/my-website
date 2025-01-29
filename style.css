@@ -1,18 +1,13 @@
-body {
-    background-image: url('blackrockbg.jpg');
-    background-size: cover; /* Make the image cover the entire background */
-    background-repeat: no-repeat; /* Prevent tiling */
-    background-attachment: fixed; /* Make the background stay in place when scrolling */
-    background-position: center; /* Center the image */
-    margin: 0; /* Remove default margin */
-    font-family: Arial, sans-serif; /* Set a font for the text */
-}
 /* General Styles */
 body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #333;
+  background-image: url('blackrockbg.jpg');
+  background-size: cover; /* Make the image cover the entire background */
+  background-repeat: no-repeat; /* Prevent tiling */
+  background-attachment: fixed; /* Make the background stay in place when scrolling */
+  background-position: center; /* Center the image */
+  margin: 0; /* Remove default margin */
+  font-family: Arial, sans-serif; /* Set a font for the text */
+  color: #fff; /* Set default text color to white */
 }
 
 .container {
@@ -23,14 +18,19 @@ body {
 
 /* Header */
 header {
-  background: #333;
-  color: #fff;
-  padding: 20px 0;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  padding: 0; /* Remove padding to fit banner */
 }
 
-header h1 {
-  margin: 0;
-  font-size: 24px;
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+nav {
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+  padding: 10px 0;
 }
 
 nav ul {
@@ -38,6 +38,7 @@ nav ul {
   padding: 0;
   margin: 0;
   display: flex;
+  justify-content: center;
   gap: 20px;
 }
 
@@ -45,72 +46,99 @@ nav ul li a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  color: #ff6f61; /* Add hover effect */
 }
 
 /* Hero Section */
 .hero {
-  background: url('../images/hero-bg.jpg') no-repeat center center/cover;
-  color: #fff;
   text-align: center;
-  padding: 100px 0;
+  padding: 100px 20px;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 50px auto;
 }
 
 .hero h2 {
-  font-size: 48px;
-  margin: 0;
+  font-size: 2.5em;
+  margin-bottom: 20px;
 }
 
 .hero p {
-  font-size: 24px;
-  margin: 10px 0 20px;
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: #ccc; /* Light gray text */
 }
 
 .cta-button {
-  background: #ff6f61;
-  color: #fff;
+  display: inline-block;
   padding: 10px 20px;
+  background-color: #007bff; /* Blue button */
+  color: #fff;
   text-decoration: none;
   border-radius: 5px;
-  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.cta-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
 }
 
 /* Benefits Section */
 .benefits {
-  padding: 50px 0;
-  text-align: center;
+  padding: 50px 20px;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+  border-radius: 8px;
+  max-width: 1000px;
+  margin: 50px auto;
 }
 
 .benefits h2 {
-  font-size: 36px;
-  margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .benefit-cards {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
 }
 
 .card {
-  background: #f4f4f4;
+  background: rgba(26, 26, 26, 0.9); /* Dark gray background */
   padding: 20px;
-  border-radius: 10px;
-  flex: 1;
+  border-radius: 8px;
+  text-align: center;
+  width: 250px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Add shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Lift card on hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5); /* Enhance shadow on hover */
 }
 
 .card h3 {
-  font-size: 24px;
-  margin: 0 0 10px;
+  margin-top: 0;
+  color: #fff;
 }
 
 .card p {
-  font-size: 16px;
-  margin: 0;
+  margin: 10px 0 20px;
+  color: #ccc; /* Light gray text */
 }
 
 /* Footer */
 footer {
-  background: #333;
-  color: #fff;
   text-align: center;
-  padding: 20px 0;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+  color: #fff;
 }
